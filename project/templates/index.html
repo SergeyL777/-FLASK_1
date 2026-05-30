@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Flask Сайт</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Это простое веб‑приложение, созданное с использованием микрофреймворка Flask.</p>
+        <img src="{{ url_for('static', filename='img/example.jpg') }}" alt="Пример изображения" width="300">
+    </div>
+</body>
+</html>
